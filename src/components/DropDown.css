@@ -1,0 +1,45 @@
+.drop-down-container {
+    border: solid lightblue 2px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.list-item-box {
+    transition: 0.4s;
+    padding: 1%;
+}
+
+.list-item-box:hover {
+    background-color: lightblue;
+    transition: 0.2s;
+}
+
+.list-item-text {
+    color: red;
+    text-align: left;
+}
+
+.active-selection-container {
+    display: inline-block;
+    position: relative;
+    padding: 1%;
+    margin: auto;
+    position: relative;
+    width: 98%;
+}
+
+#active-selection {
+    background-color: inherit;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+}
+
+#dropdown-button {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    background-color: white
+}
