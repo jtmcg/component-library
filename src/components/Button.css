@@ -13,6 +13,7 @@
     padding: 20px;
     cursor: pointer;
     margin: 5px;
+    transition: 0.1s;
 }
 
 .button span {
@@ -40,6 +41,6 @@ button:hover span:after {
 }
 
 .button:active {
-    border: solid lightblue 4px;
+    transform: scale(0.98);
     transition: 0.1s;
 }

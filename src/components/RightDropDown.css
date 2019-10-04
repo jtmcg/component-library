@@ -1,0 +1,75 @@
+:root {
+    --boxColor: lightblue;
+    --backgroundColor: white;
+    --activeColor: lightgray;
+}
+
+.drop-down-container-RDD {
+    border: solid var(--boxColor) 2px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.list-item-box-RDD {
+    transition: 0.4s;
+    padding: 1%;
+    margin: auto;
+}
+
+.list-item-box-RDD:hover {
+    background-color: var(--boxColor);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.list-item-text-RDD {
+    color: red;
+    text-align: left;
+    margin: auto;
+}
+
+#active-selection-container-RDD {
+    display: inline-block;
+    width: 100%;
+    transition: 0.4s;
+}
+
+#active-selection-container-RDD:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: var(--boxColor);
+}
+
+#active-selection-RDD {
+    width: 89%;
+    text-align: left;
+    padding: 1%;
+    border: none;
+    display: inline-block;
+    margin: auto;
+    background-color: rgba(0,0,0,0)
+}
+
+#active-selection-RDD:hover {
+    cursor: pointer;
+}
+
+#active-RDD {
+    background-color: var(--activeColor);
+    transition: 0.4s;
+}
+
+#active-RDD:hover{
+    background-color: var(--boxColor);
+    transition: 0.4s;
+}
+
+#dropdown-button-RDD {
+    width: 9%;
+    display: inline-block;
+    margin: auto;
+    background-color: rgba(0,0,0,0)
+}

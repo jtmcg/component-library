@@ -46,12 +46,12 @@ export default class BottomDropDown extends Component {
             expandedDropDown = this.state.selectionList.map(listItem => {
                 var id = null;
                 if (listItem === this.state.activeSelection) {
-                    id = "active";
+                    id = "active-BDD";
                 }
 
                 return (
-                    <div className="list-item-box" id={id} key={listItem} onClick={() => this.selectItem(listItem)}>
-                        <p className="list-item-text">{listItem}</p>
+                    <div className="list-item-box-BDD" id={id} key={listItem} onClick={() => this.selectItem(listItem)}>
+                        <p className="list-item-text-BDD">{listItem}</p>
                     </div>
                 )
             });
@@ -59,10 +59,10 @@ export default class BottomDropDown extends Component {
             expandedDropDown = null;
         }
         return (
-            <div className="drop-down-container">
-                <p id="active-selection" onClick={this.dropdownClicked}><span>{this.state.activeSelection}</span></p>
+            <div className="drop-down-container-BDD">
+                <p id="active-selection-BDD" onClick={this.dropdownClicked}><span>{this.state.activeSelection}</span></p>
                 {expandedDropDown}
-                <button id="dropdown-button" onClick={this.dropdownClicked}><span>{clickedStatus}</span></button>
+                <div id="dropdown-button-BDD" onClick={this.dropdownClicked}><span>{clickedStatus}</span></div>
             </div>
         )
 

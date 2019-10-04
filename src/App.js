@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import CustomButton from './components/Button';
 import BottomDropDown from './components/BottomDropDown';
+import RightDropDown from './components/RightDropDown';
+import ImageCarousel from './components/ImageCarousel';
 
 function PropFunctionTest(arg) {
   alert(arg)
@@ -19,6 +21,12 @@ function TestEnv() {
       <BottomDropDown
         handleSelect={PropFunctionTest}
         selectionList={["item1", "item2", "item3"]}
+      />
+      <RightDropDown
+        handleSelect={PropFunctionTest}
+        selectionList={["item1", "item2", "item3"]}
+      />
+      <ImageCarousel
       />
     </div>
   );
