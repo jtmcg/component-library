@@ -1,0 +1,54 @@
+.drop-down-container {
+    border: solid lightblue 2px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.list-item-box {
+    transition: 0.4s;
+    padding: 1%;
+}
+
+.list-item-box:hover {
+    background-color: lightblue;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.list-item-text {
+    color: red;
+    text-align: left;
+}
+
+#active-selection {
+    background-color: inherit;
+    width: 98%;
+    text-align: left;
+    padding: 1%;
+    border: none;
+}
+
+#active-selection:hover {
+    cursor: pointer;
+}
+
+#active {
+    background-color: lightgray;
+}
+
+#dropdown-button {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border: none;
+    top: -10%;
+}
+
+#dropdown-button:hover {
+    background-color: lightblue;
+    transition: 0.4s;
+    cursor: pointer;
+}
