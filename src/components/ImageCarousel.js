@@ -14,6 +14,8 @@ export default class ImageCarousel extends Component {
         this.nextSlide = this.nextSlide.bind(this);
     }
     
+
+    //Will require some refactoring to implement into other code based off image location
     componentDidMount() {
         const baseURL = "https://picsum.photos/id/";
         const photos = [baseURL+"1018/1600/900", baseURL+"1022/1600/900",baseURL+"1043/1600/900"]

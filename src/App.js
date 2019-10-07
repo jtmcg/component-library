@@ -5,6 +5,7 @@ import CustomButton from './components/Button';
 import BottomDropDown from './components/BottomDropDown';
 import RightDropDown from './components/RightDropDown';
 import ImageCarousel from './components/ImageCarousel';
+import Fade from './reacttransitiongrouppractice';
 
 function PropFunctionTest(arg) {
   alert(arg)
@@ -28,6 +29,9 @@ function TestEnv() {
       />
       <ImageCarousel
       />
+      <div>
+        <Fade/>
+      </div>
     </div>
   );
 }
