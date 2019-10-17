@@ -1,0 +1,17 @@
+.test-node-enter {
+    opacity: 0;
+}
+
+.test-node-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.test-node-exit {
+    opacity: 1;
+}
+
+.test-node-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+}

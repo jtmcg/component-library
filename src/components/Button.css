@@ -35,7 +35,7 @@
     padding-right: 25px;
 }
 
-button:hover span:after {
+.button:hover span:after {
     opacity: 1;
     right: 0;
 }

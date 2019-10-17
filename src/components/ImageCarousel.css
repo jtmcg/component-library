@@ -18,11 +18,50 @@
 .image-carousel-slide {
     height: 100%;
     width: 100%;
-    transition: src .3s ease-in-out;
+    transition: ease 500ms;
 }
 
 .image-carousel-slide:hover {
     cursor: pointer;
+}
+
+.image-carousel-slide-hidden {
+    display: none;
+}
+
+.carousel-size-placeholder {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    visibility: hidden;
+}
+
+.image-carousel-slide-next {
+    height: 60%;
+    width: 60%;
+    left: 35%;
+    position: absolute;
+    top: 20%;
+    z-index: 500;
+}
+
+.image-carousel-slide-previous {
+    height: 60%;
+    width: 60%;
+    left: 5%;
+    top: 20%;
+    z-index: 500;
+    position: absolute;
+}
+
+.image-carousel-slide-current {
+    height: 80%;
+    width: 80%;
+    right: 0;
+    position: absolute;
+    top: 10%;
+    z-index: 1000;
+    left: 10%;
 }
 
 .slide-arrow {
@@ -32,6 +71,7 @@
     position: absolute;
     bottom: 43%;
     opacity: 0.6;
+    z-index: 1500;
 }
 
 .slide-arrow:active {

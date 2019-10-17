@@ -5,7 +5,8 @@ import CustomButton from './components/Button';
 import BottomDropDown from './components/BottomDropDown';
 import RightDropDown from './components/RightDropDown';
 import ImageCarousel from './components/ImageCarousel';
-import Fade from './reacttransitiongrouppractice';
+import FunctionTest from './components/FunctionTest';
+import Test from './reacttransitiongrouppractice';
 
 function PropFunctionTest(arg) {
   alert(arg)
@@ -27,10 +28,12 @@ function TestEnv() {
         handleSelect={PropFunctionTest}
         selectionList={["item1", "item2", "item3"]}
       />
-      <ImageCarousel
+      <FunctionTest
       />
-      <div>
-        <Fade/>
+      <Test/>
+      <div style={{width: "100%"}}>
+        <ImageCarousel
+        />
       </div>
     </div>
   );

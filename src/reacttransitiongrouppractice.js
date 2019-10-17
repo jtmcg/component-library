@@ -1,5 +1,6 @@
-import { Transition } from 'react-transition-group';
-import React from 'react';
+import { Transition, CSSTransition } from 'react-transition-group';
+import React, { Component } from 'react';
+import './reacttransitiongrouppractice.css';
 
 const duration = 300; //in milliseconds
 
@@ -35,4 +36,33 @@ const Fade = ({ in: inProp }) => (
     </Transition>
 );
 
-export default Fade;
+export default class Test extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            inProp: false,
+        }
+    }
+
+    toggleState = () => {
+        const newState = !this.state.inProp;
+        this.setState({
+            inProp: newState
+        });
+    }
+
+    render() {
+        return(
+            <div>
+                <CSSTransition in={this.state.inProp} unmountOnExit timeout={200} classNames="test-node">
+                    <div>
+                        {"I'll recieve test-node-* classes"}
+                    </div>
+                </CSSTransition>
+                <button type="button" onClick={this.toggleState}>
+                    Click to Toggle
+                </button>
+            </div>
+        )
+    }
+}
