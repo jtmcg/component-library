@@ -7,6 +7,7 @@ import RightDropDown from './components/RightDropDown';
 import ImageCarousel from './components/ImageCarousel';
 import FunctionTest from './components/FunctionTest';
 import Test from './reacttransitiongrouppractice';
+import LoadingAnimation from './components/LoadingAnimation';
 
 function PropFunctionTest(arg) {
   alert(arg)
@@ -16,6 +17,7 @@ function TestEnv() {
   return (
     <div className="App">
       <h1>Test Env</h1>
+      <LoadingAnimation />
       <CustomButton
         onClick={PropFunctionTest}
         buttonText={"Test"}
@@ -28,9 +30,6 @@ function TestEnv() {
         handleSelect={PropFunctionTest}
         selectionList={["item1", "item2", "item3"]}
       />
-      <FunctionTest
-      />
-      <Test/>
       <div style={{width: "100%"}}>
         <ImageCarousel
         />
