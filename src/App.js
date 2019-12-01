@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CustomButton from './components/Button';
 import BottomDropDown from './components/BottomDropDown';
@@ -8,6 +7,7 @@ import ImageCarousel from './components/ImageCarousel';
 import FunctionTest from './components/FunctionTest';
 import Test from './reacttransitiongrouppractice';
 import LoadingAnimation from './components/LoadingAnimation';
+import RotatingBox from './components/RotatingBox';
 
 function PropFunctionTest(arg) {
   alert(arg)
@@ -18,6 +18,7 @@ function TestEnv() {
     <div className="App">
       <h1>Test Env</h1>
       <LoadingAnimation />
+      <RotatingBox />
       <CustomButton
         onClick={PropFunctionTest}
         buttonText={"Test"}

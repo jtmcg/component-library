@@ -1,0 +1,24 @@
+.box-conatainer {
+    margin: auto;
+    width: 100%;
+    height: 150%;
+    position: relative;
+}
+
+.box {
+    color: red;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: red;
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg)}
+    15% {transform: rotate(-30deg)}
+    85% {transform: rotate(1110deg)}
+    100% {transform: rotate(1080deg)}
+}
