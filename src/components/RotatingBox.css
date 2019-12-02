@@ -13,12 +13,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: red;
-    animation: rotate 2s infinite;
+    animation: rotate 5s infinite;
+    transform: rotate(-30deg)
 }
 
 @keyframes rotate {
-    0% {transform: rotate(0deg)}
-    15% {transform: rotate(-30deg)}
-    85% {transform: rotate(1110deg)}
-    100% {transform: rotate(1080deg)}
+    0% {transform: rotate(-30deg)}
+    50% {transform: rotate(1110deg)}
 }

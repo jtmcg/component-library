@@ -8,6 +8,7 @@ import FunctionTest from './components/FunctionTest';
 import Test from './reacttransitiongrouppractice';
 import LoadingAnimation from './components/LoadingAnimation';
 import RotatingBox from './components/RotatingBox';
+import LoadingAnimatePeriods from './components/LoadingAnimatePeriods';
 
 function PropFunctionTest(arg) {
   alert(arg)
@@ -19,6 +20,7 @@ function TestEnv() {
       <h1>Test Env</h1>
       <LoadingAnimation />
       <RotatingBox />
+      <LoadingAnimatePeriods />
       <CustomButton
         onClick={PropFunctionTest}
         buttonText={"Test"}
